@@ -21,13 +21,21 @@ public class serverLoadBalancerTest {
   }
 
   private Server[] theListOfServerWith(final Server... servers) {
-    return new Server[0];
+    return servers;
+  }
+
+  private Vm[] anEmptyListOfVm() {
+    return new Vm[0];
+  }
+  
+  private Matcher<? super Server> hasCurrentLoadPercentageOf(final double currentLoadPercentage) {
+    return new CurrentLoadPercentageMatcher(currentLoadPercentage);
   }
   
   @Test
   public void balancingOneServer_noVm_serverStaysEmpty() {
     Server theServer = a(server().withCapacity(1));
-    balance(theListOfServerWith(theServer, anEmptyListOfVM()));
+    balance(theListOfServerWith(theServer, anEmptyListOfVm()));
     assertThat(theServer, hasCurrentLoadPercentageOf(0.0d));
   }
 
