@@ -1,7 +1,8 @@
 package serverloadbalancer;
 
 import org.hamcrest.Description;
-import org.gamcrest.TypeSafeMatcher;
+import org.hamcrest.Matcher;
+import org.hamcrest.TypeSafeMatcher;
 
 public class CurrentLoadPercentageMatcher extends TypeSafeMatcher<Server> {
   public static final double EPSILON = 0.01d;
@@ -22,12 +23,12 @@ public class CurrentLoadPercentageMatcher extends TypeSafeMatcher<Server> {
 
   @Override
   public void describeTo(final Description description) {
-    description.append("a server with a curren load percentage of ").appendValue(item.currentLoadPercentage);
+    description.appendText("a server with a current load percentage of ").appendValue(expectedCurrentLoadPercentage);
   }
 
   @Override
   protected void describeMismatchSafely(final Server item, final Description mismatchDescription) {
-    mismatchDescription.append("a server with a current load percentage of ").appendValue(item.currentLoadPercentage);
+    mismatchDescription.appendText("a server with a current load percentage of ").appendValue(item.currentLoadPercentage);
   }
 
   public static Matcher<Server> hasCurrentLoadPercentageOf(final double currentLoadPercentage) {

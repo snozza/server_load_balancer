@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="serverloadbalancer.serverLoadBalancerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-03-09T14:59:39" hostname="Andrews-MacBook-Pro-3.local" time="0.038">
+<testsuite name="serverloadbalancer.serverLoadBalancerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-03-11T10:16:00" hostname="Andrews-MacBook-Pro-3.local" time="0.009">
   <properties/>
-  <testcase name="itCompiles" classname="serverloadbalancer.serverLoadBalancerTest" time="0.038"/>
+  <testcase name="itCompiles" classname="serverloadbalancer.serverLoadBalancerTest" time="0.005"/>
+  <testcase name="balancingOneServer_noVm_serverStaysEmpty" classname="serverloadbalancer.serverLoadBalancerTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

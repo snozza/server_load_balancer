@@ -12,7 +12,7 @@ public class VmBuilder implements Builder<Vm> {
     return new VmBuilder();
   }
 
-  public VmBuidler ofSize(final int size) {
+  public VmBuilder ofSize(final int size) {
     this.size = size;
     return this;
   }

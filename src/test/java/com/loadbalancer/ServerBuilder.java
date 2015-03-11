@@ -8,7 +8,7 @@ public class ServerBuilder implements Builder<Server> {
     return new Server(capacity);
   }
  
-  public static ServerBuidler server() {
+  public static ServerBuilder server() {
     return new ServerBuilder();
   }
 
