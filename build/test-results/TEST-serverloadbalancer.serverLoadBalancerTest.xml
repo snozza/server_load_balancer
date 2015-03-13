@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="serverloadbalancer.serverLoadBalancerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2015-03-13T08:14:45" hostname="Andrews-MacBook-Pro-3.local" time="0.012">
+<testsuite name="serverloadbalancer.serverLoadBalancerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-03-13T08:26:22" hostname="Andrews-MacBook-Pro-3.local" time="0.015">
   <properties/>
-  <testcase name="balanceAServerWithTenSlotsCapacity_andAOneSlotVm_fillsTheServerAtTenPercent" classname="serverloadbalancer.serverLoadBalancerTest" time="0.005"/>
+  <testcase name="balanceMultipleServersAndVms_withCorrectLoadsOnServers" classname="serverloadbalancer.serverLoadBalancerTest" time="0.005"/>
+  <testcase name="balanceAServerWithTenSlotsCapacity_andAOneSlotVm_fillsTheServerAtTenPercent" classname="serverloadbalancer.serverLoadBalancerTest" time="0.0"/>
   <testcase name="balanceAServerWithNotEnoughRoom_isNotFilledWithAVm" classname="serverloadbalancer.serverLoadBalancerTest" time="0.0"/>
   <testcase name="balanceAServerWithEnoughCapacity_getsFilledWithAllVms" classname="serverloadbalancer.serverLoadBalancerTest" time="0.001"/>
-  <testcase name="aVm_isBalance_onLessLoadedServerFirst" classname="serverloadbalancer.serverLoadBalancerTest" time="0.001"/>
-  <testcase name="itCompiles" classname="serverloadbalancer.serverLoadBalancerTest" time="0.002"/>
+  <testcase name="aVm_isBalance_onLessLoadedServerFirst" classname="serverloadbalancer.serverLoadBalancerTest" time="0.0"/>
+  <testcase name="itCompiles" classname="serverloadbalancer.serverLoadBalancerTest" time="0.003"/>
   <testcase name="balancingOneServer_noVm_serverStaysEmpty" classname="serverloadbalancer.serverLoadBalancerTest" time="0.0"/>
-  <testcase name="balanceAServerWithOnceSlotCapacity_andAOneSlotVm_fillsTheServerWithTheVM" classname="serverloadbalancer.serverLoadBalancerTest" time="0.001"/>
+  <testcase name="balanceAServerWithOnceSlotCapacity_andAOneSlotVm_fillsTheServerWithTheVM" classname="serverloadbalancer.serverLoadBalancerTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
